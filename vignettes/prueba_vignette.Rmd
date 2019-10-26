@@ -1,0 +1,27 @@
+---
+title: "Esto es un Vignette de prueba"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Esto es un Vignette de prueba}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(pqtprueba)
+```
+
+
+```{r}
+  factor1 <- factor(c('ola','k','ase'))
+  factor2 <- factor(c('atr', 'perro', 'cumbia', 'cajeteala', 'piola', 'gato'))
+fbind(factor1,factor2)
+```
+
